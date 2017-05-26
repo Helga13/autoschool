@@ -1,0 +1,620 @@
+/* --- general styles --- */
+
+* {
+	outline: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+//	font-size: 62.5%;
+	/* Sets up the Base 10 stuff 100%/1.6 */
+	height: 100%;
+}
+
+body {
+	background-color: #a22dab;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	font-family: 'ubuntuRegular', $font-stack-helvetica;
+	font-size: 18px;
+	font-smoothing: antialiased;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img{
+	width: 100%;
+}
+
+input{
+	height: 60px;
+	width: 100%;
+	margin: 10px 0;
+	border: 1px solid #debc50;
+	border-radius: 30px;
+	font-size: 25px;
+	line-height: 60px;
+	padding: 0 20px 0 60px;
+	font-family: 'ubuntuRegular', $font-stack-helvetica;
+}
+::-webkit-input-placeholder {opacity:0.6;}
+::-moz-placeholder          {opacity:0.6;}/* Firefox 19+ */
+:-moz-placeholder           {opacity:0.6;}/* Firefox 18- */
+:-ms-input-placeholder      {opacity:0.6;}
+
+time{
+	font-family: 'ubuntuBold', $font-stack-helvetica;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.btn{
+	border: none;
+	font-family: 'ubuntuBold', $font-stack-helvetica;
+	font-size: 25px;
+	line-height: 60px;
+	padding: 0 10px;
+	text-align: center;
+	border-radius: 30px;
+	outline: none;
+	margin: 10px 0;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	background: #dabd54;
+	color: #fff;
+	z-index: 0;
+	display: inline-block;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6be2c6+0,6be2c6+0,dabd54+89,dabd54+100,dabd54+100,2989d8+100,dabd54+100 */
+background: #6be2c6; /* Old browsers */
+background: linear-gradient(to right, #6be2c6 0%,#dabd54 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6be2c6', endColorstr='#dabd54',GradientType=1 ); /* IE6-9 */
+		z-index: -1;
+		transition: transform 0.3s ease;
+	}
+	.btn_text{
+		z-index: 1;
+	}
+	&:hover:before{
+		transform: translateX(-100%);
+	}
+}
+
+.strike{
+	text-decoration: line-through;
+}
+
+.bold{
+	font-family: 'ubuntuBold', $font-stack-helvetica;
+}
+
+.link{
+//	color: #65bd26;
+//	border-bottom: 1px solid #dff0d7;
+}
+
+.wrap{
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+	font-size: 0;
+	&.wrap_col{
+		padding: 0;
+	}
+}
+.col{
+	padding: 0 10px;
+	display: inline-block;
+}
+.col4{
+	width: 25%;
+}
+
+.col8{
+	width: 50%;
+}
+
+.section_title{
+	font-size: 30px;
+	line-height: 40px;
+	font-family: 'ubuntuBold', $font-stack-helvetica;
+	text-align: center;
+}
+
+/* --- header --- */
+
+.header_top{
+	min-height: 70px;
+	padding: 15px 0;
+}
+
+.metro{
+	display: inline-block;
+	width: 50%;
+	vertical-align: middle;
+	& > li{
+		display: inline-block;
+		width: 140px;
+		margin-right: 20px;
+	}
+	.icon,
+	.name{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.icon{
+		width: 10px;
+		margin-right: 5px;
+	}
+	.name{
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+.tabs_block{
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+	text-align: right;
+	font-family: 'ubuntuBold', $font-stack-helvetica;
+	.tabs_caption{
+		float: right;
+		margin-left: 20px;
+	}
+	.tab {
+    font-size: 14px;
+    line-height: 20px;
+    color: #f3c8f6;
+    border-bottom: 1px dashed #f3c8f6;
+    cursor: pointer;
+		display: inline-block;
+		margin-right: 14px;
+		font-family: 'ubuntuBold', $font-stack-helvetica;
+		&.active{
+			color: #fff;
+			border-bottom-color: #f3c8f6;
+		}
+	}
+	.tabs_content {
+		display: none;
+		font-size: 16px;
+		line-height: 20px;
+		color: #f3c8f6;
+		.bold{
+			color: #fff;
+		}
+		&.active{
+			display: inline-block;
+		}
+	}
+}
+
+.logo{
+	width: 140px;
+	overflow: hidden;
+	position: relative;
+	top: -40px;
+	z-index: 1;
+}
+
+.main_menu{
+	background-color: #dabd54;
+	height: 60px;
+	li{
+		display: inline-block;
+	}
+	.link_m{
+		font-size: 18px;
+		line-height: 30px;
+		font-family: 'ubuntuBold', $font-stack-helvetica;
+		transition: color 0.3s ease;
+		&:hover{
+			color: #8b2d91;
+		}
+	}
+	.main_menu__left,
+	.main_menu__right{
+		width: calc(50% - 70px);
+		li{
+			width: 33.333%;
+			padding: 15px 0;
+		}
+	}
+	.main_menu__left{
+		float: left;
+	}
+	.main_menu__right{
+		float: right;
+		text-align: right;
+	}
+}
+
+/* --- footer --- */
+
+footer{
+	background-color: #751c7c;
+	.copyright,
+	.skyweb{
+		display: inline-block;
+		width: 50%;
+		height: 80px;
+		line-height: 80px;
+		color: #a22dab;
+		font-size: 18px;
+		font-family: 'ubuntuLight', $font-stack-helvetica;
+	}
+	.skyweb{
+		text-align: right;
+	}
+	.skyweb_link{
+		color: #fff;
+	}
+}
+
+/* --- content --- */
+
+.free_place_block{
+	background: url('../img/patterns/pattern.jpg'); 
+	font-family: 'ubuntuBold', $font-stack-helvetica;
+	padding: 72px 0 94px;
+	position: relative;
+	&:after,
+	&:before{
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-right: 50vw solid transparent;
+		border-bottom: 20px solid #eee;
+		bottom: 0;
+	}
+	&:before{
+		border-right: none;
+		border-left: 50vw solid transparent;
+		right: 0;
+	}
+	input.name{
+		background: url('../img/icons/icons_person.png') left 8px center no-repeat, #fff;
+		background-size: 40px;
+	}
+	input.phone{
+		background: url('../img/icons/icons_phone.png') left 8px center no-repeat, #fff;
+		background-size: 40px;
+	}
+	.left_col{
+		text-align: center;
+		width: 58.333%;
+		.pointer{
+			background-color: #6be2c6;
+			padding: 0 22px;
+			line-height: 100px;
+			text-align: left;
+			position: relative;
+			margin-right: 60px;
+			top: 4px;
+			&:after{
+				content: '';
+				position: absolute;
+				right: -110px;
+				display: inline-block;
+				width: 0;
+				border-top: 50px solid transparent;
+				border-right: 50px solid transparent;
+				border-bottom: 50px solid transparent;
+				border-left: 60px solid #6be2c6;
+			}
+		}
+		.tagline{
+			padding: 11px 0 17px;
+		}
+	}
+	.right_col{
+		text-align: center;
+		width: 41.667%;
+		.btn{
+			width: 100%;
+		}
+	}
+	.subtitle{
+		padding: 4px 0;
+	}
+}
+
+.title{
+	font-size: 35px;
+	line-height: 45px;
+}
+
+.tagline{
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.subtitle{
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.advantages{
+	background-color: #eee;
+	padding: 50px 0 14px;
+	position: relative;
+	&:after,
+	&:before{
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-right: 50vw solid transparent;
+		border-bottom: 20px solid #a22dab;
+		bottom: 0;
+	}
+	&:before{
+		border-right: none;
+		border-left: 50vw solid transparent;
+		right: 0;
+	}
+	.col{
+		vertical-align: top;
+		padding-top: 24px;
+		text-align: center;
+	}
+	.section_title{
+		color: #a22dab;
+	}
+	.btn{
+		width: 100%;
+		max-width: 380px;
+	}
+}
+
+.advantages_item{
+	padding: 0 10px;
+	padding-bottom: 34px;
+	.advantages_caption{
+		font-size: 18px;
+		line-height: 20px;
+		font-family: 'ubuntuBold', $font-stack-helvetica;
+		color: #a22dab;
+		padding: 20px 6px;
+	}
+	&.main{
+		border-radius: 50%;
+		background-color: #a22dab;
+		height: 100%;
+		padding: 0;
+		margin: 0 10px 20px;
+		position: relative;
+		.inner_circle{
+			height: 0;
+			margin: 0;
+			padding: 50% 20%;
+		}
+		.inner_text{
+			position: absolute;
+			left: 0;
+			top: 20px;
+		}
+		.advantages_img{
+			img{
+				width: 80px;
+			}
+		}
+		.advantages_caption{
+			color: #6be2c6;
+			font-size: 25px;
+			line-height: 35px;
+			padding: 24px 86px 20px;
+		}
+		.text{
+			font-size: 18px;
+			line-height: 20px;
+			padding-bottom: 4px;
+		}
+	}
+}
+
+.metro.marked{
+	.list{
+		margin: 0;
+		width: auto;
+		padding: 8px 0 8px 18px;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			background-color: #fff;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			left: 0;
+			top: 14px;
+		}
+	}
+}
+
+.stages{
+	padding: 54px 0 34px;
+}
+
+.stages_item{
+	padding: 30px 0 0 0;
+	background-color: #8f2697;
+	margin: 28px 0;
+}
+
+.stages_img{
+	display: inline-block;
+	width: 220px;
+	padding: 10px;
+	vertical-align: top;
+}
+
+.stages_right{
+	display: inline-block;
+	width: calc(100% - 220px);
+	padding: 0 20px;
+	.text{
+		padding: 0 10px;
+	}
+}
+
+.stages_title{
+	color: #6ce2c5;
+	font-size: 24px;
+	line-height: 30px;
+	font-family: 'ubuntuBold', $font-stack-helvetica;
+	padding: 0 10px 10px;
+	margin-top: -4px;
+}
+
+.text{
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.stages_list{
+	padding: 14px 0 24px;
+	.icon,
+	.text{
+		display: inline-block;
+		vertical-align: middle;
+		font-family: 'ubuntuBold', $font-stack-helvetica;
+		padding: 0;
+	}
+	.icon{
+		width: 60px;
+		padding: 5px 10px;
+	}
+}
+
+.stages_caption{
+	background-color: #751c7c;
+	font-size: 24px;
+	line-height: 47px;
+	text-align: center;
+	padding: 21px 0;
+	&.yellow{
+		background-color: #debc50;
+	}
+	.mod{
+		font-size: 18px;
+	}
+}
+
+.counter{
+	text-align: center;
+	background: url('../img/patterns/pattern.jpg');
+	padding: 60px 0;
+	.num{
+		font-size: 60px;
+		line-height: 140px;
+		font-family: 'ubuntuBold', $font-stack-helvetica;
+		border-radius: 50%;
+		background-color: #debc50;
+		width: 140px;
+		height: 140px;
+		margin: 0 auto;
+	}
+	.title{
+		width: 400px; 
+		margin: 6px auto 14px;
+	}
+	.btn{
+		width: 380px;
+		margin-bottom: 0;
+	}
+}
+
+.text_light{
+	font-size: 14px;
+	line-height: 20px;
+	font-family: 'ubuntuLight', $font-stack-helvetica;
+	padding: 11px 10px;
+}
+
+.stages.helper{
+	padding-bottom: 30px;
+	.stages_item{
+		padding-bottom: 30px;
+	}
+	.photos_item{
+		padding: 20px 0 0 20px;
+		img{
+			width: 50%;
+		}
+	}
+}
+
+.review_item{
+	padding: 20px 10px 4px;
+	.name{
+		font-size: 14px;
+		line-height: 20px;
+		font-family: 'ubuntuBold', $font-stack-helvetica;
+	}
+	.text_light{
+		padding: 20px 0 0 0;
+	}
+}
+
+.contacts{
+	background: url('../img/patterns/pattern.jpg');
+	font-size: 0;
+}
+
+.map{
+	width: 50%;
+	display: inline-block;
+}
+
+.contacts_item{
+	display: inline-block;
+	padding: 40px 0 50px 100px;
+	vertical-align: top;
+	.title{
+		padding: 10px;
+	}
+	.stages_title{
+		padding: 26px 10px 14px;
+		width: 280px;
+	}
+	.contacts_list{
+		padding: 0 0 15px;
+		li{
+			font-family: 'ubuntuBold', $font-stack-helvetica;
+			font-size: 20px;
+			line-height: 24px;
+			padding: 6px 10px;
+		}
+	}
+	.btn{
+		width: 380px;
+	}
+}

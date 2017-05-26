@@ -1,0 +1,282 @@
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+$about_photos-name: 'about_photos'
+$about_photos-x: 1600px
+$about_photos-y: 0px
+$about_photos-offset-x: -1600px
+$about_photos-offset-y: 0px
+$about_photos-width: 250px
+$about_photos-height: 250px
+$about_photos-total-width: 1850px
+$about_photos-total-height: 1850px
+$about_photos-image: 'sprite.png'
+$about_photos: 1600px 0px -1600px 0px 250px 250px 1850px 1850px 'sprite.png' 'about_photos'
+$about_reviews-name: 'about_reviews'
+$about_reviews-x: 500px
+$about_reviews-y: 1600px
+$about_reviews-offset-x: -500px
+$about_reviews-offset-y: -1600px
+$about_reviews-width: 250px
+$about_reviews-height: 250px
+$about_reviews-total-width: 1850px
+$about_reviews-total-height: 1850px
+$about_reviews-image: 'sprite.png'
+$about_reviews: 500px 1600px -500px -1600px 250px 250px 1850px 1850px 'sprite.png' 'about_reviews'
+$advanages_avtodrom-name: 'advanages_avtodrom'
+$advanages_avtodrom-x: 1600px
+$advanages_avtodrom-y: 250px
+$advanages_avtodrom-offset-x: -1600px
+$advanages_avtodrom-offset-y: -250px
+$advanages_avtodrom-width: 250px
+$advanages_avtodrom-height: 250px
+$advanages_avtodrom-total-width: 1850px
+$advanages_avtodrom-total-height: 1850px
+$advanages_avtodrom-image: 'sprite.png'
+$advanages_avtodrom: 1600px 250px -1600px -250px 250px 250px 1850px 1850px 'sprite.png' 'advanages_avtodrom'
+$advanages_graphic-name: 'advanages_graphic'
+$advanages_graphic-x: 1600px
+$advanages_graphic-y: 500px
+$advanages_graphic-offset-x: -1600px
+$advanages_graphic-offset-y: -500px
+$advanages_graphic-width: 250px
+$advanages_graphic-height: 250px
+$advanages_graphic-total-width: 1850px
+$advanages_graphic-total-height: 1850px
+$advanages_graphic-image: 'sprite.png'
+$advanages_graphic: 1600px 500px -1600px -500px 250px 250px 1850px 1850px 'sprite.png' 'advanages_graphic'
+$advanages_money-name: 'advanages_money'
+$advanages_money-x: 1600px
+$advanages_money-y: 750px
+$advanages_money-offset-x: -1600px
+$advanages_money-offset-y: -750px
+$advanages_money-width: 250px
+$advanages_money-height: 250px
+$advanages_money-total-width: 1850px
+$advanages_money-total-height: 1850px
+$advanages_money-image: 'sprite.png'
+$advanages_money: 1600px 750px -1600px -750px 250px 250px 1850px 1850px 'sprite.png' 'advanages_money'
+$advanages_place-name: 'advanages_place'
+$advanages_place-x: 1600px
+$advanages_place-y: 1000px
+$advanages_place-offset-x: -1600px
+$advanages_place-offset-y: -1000px
+$advanages_place-width: 250px
+$advanages_place-height: 250px
+$advanages_place-total-width: 1850px
+$advanages_place-total-height: 1850px
+$advanages_place-image: 'sprite.png'
+$advanages_place: 1600px 1000px -1600px -1000px 250px 250px 1850px 1850px 'sprite.png' 'advanages_place'
+$advanages_teach-name: 'advanages_teach'
+$advanages_teach-x: 1600px
+$advanages_teach-y: 1250px
+$advanages_teach-offset-x: -1600px
+$advanages_teach-offset-y: -1250px
+$advanages_teach-width: 250px
+$advanages_teach-height: 250px
+$advanages_teach-total-width: 1850px
+$advanages_teach-total-height: 1850px
+$advanages_teach-image: 'sprite.png'
+$advanages_teach: 1600px 1250px -1600px -1250px 250px 250px 1850px 1850px 'sprite.png' 'advanages_teach'
+$icons_person-name: 'icons_person'
+$icons_person-x: 0px
+$icons_person-y: 1600px
+$icons_person-offset-x: 0px
+$icons_person-offset-y: -1600px
+$icons_person-width: 250px
+$icons_person-height: 250px
+$icons_person-total-width: 1850px
+$icons_person-total-height: 1850px
+$icons_person-image: 'sprite.png'
+$icons_person: 0px 1600px 0px -1600px 250px 250px 1850px 1850px 'sprite.png' 'icons_person'
+$icons_phone-name: 'icons_phone'
+$icons_phone-x: 250px
+$icons_phone-y: 1600px
+$icons_phone-offset-x: -250px
+$icons_phone-offset-y: -1600px
+$icons_phone-width: 250px
+$icons_phone-height: 250px
+$icons_phone-total-width: 1850px
+$icons_phone-total-height: 1850px
+$icons_phone-image: 'sprite.png'
+$icons_phone: 250px 1600px -250px -1600px 250px 250px 1850px 1850px 'sprite.png' 'icons_phone'
+$icons_white_aducation-name: 'icons_white_aducation'
+$icons_white_aducation-x: 1810px
+$icons_white_aducation-y: 1500px
+$icons_white_aducation-offset-x: -1810px
+$icons_white_aducation-offset-y: -1500px
+$icons_white_aducation-width: 40px
+$icons_white_aducation-height: 40px
+$icons_white_aducation-total-width: 1850px
+$icons_white_aducation-total-height: 1850px
+$icons_white_aducation-image: 'sprite.png'
+$icons_white_aducation: 1810px 1500px -1810px -1500px 40px 40px 1850px 1850px 'sprite.png' 'icons_white_aducation'
+$icons_white_car-name: 'icons_white_car'
+$icons_white_car-x: 1770px
+$icons_white_car-y: 1500px
+$icons_white_car-offset-x: -1770px
+$icons_white_car-offset-y: -1500px
+$icons_white_car-width: 40px
+$icons_white_car-height: 40px
+$icons_white_car-total-width: 1850px
+$icons_white_car-total-height: 1850px
+$icons_white_car-image: 'sprite.png'
+$icons_white_car: 1770px 1500px -1770px -1500px 40px 40px 1850px 1850px 'sprite.png' 'icons_white_car'
+$icons_white_person-08-name: 'icons_white_person-08'
+$icons_white_person-08-x: 1730px
+$icons_white_person-08-y: 1500px
+$icons_white_person-08-offset-x: -1730px
+$icons_white_person-08-offset-y: -1500px
+$icons_white_person-08-width: 40px
+$icons_white_person-08-height: 40px
+$icons_white_person-08-total-width: 1850px
+$icons_white_person-08-total-height: 1850px
+$icons_white_person-08-image: 'sprite.png'
+$icons_white_person-08: 1730px 1500px -1730px -1500px 40px 40px 1850px 1850px 'sprite.png' 'icons_white_person-08'
+$icons_white_shadue-name: 'icons_white_shadue'
+$icons_white_shadue-x: 1690px
+$icons_white_shadue-y: 1500px
+$icons_white_shadue-offset-x: -1690px
+$icons_white_shadue-offset-y: -1500px
+$icons_white_shadue-width: 40px
+$icons_white_shadue-height: 40px
+$icons_white_shadue-total-width: 1850px
+$icons_white_shadue-total-height: 1850px
+$icons_white_shadue-image: 'sprite.png'
+$icons_white_shadue: 1690px 1500px -1690px -1500px 40px 40px 1850px 1850px 'sprite.png' 'icons_white_shadue'
+$icons_white_time-name: 'icons_white_time'
+$icons_white_time-x: 1650px
+$icons_white_time-y: 1500px
+$icons_white_time-offset-x: -1650px
+$icons_white_time-offset-y: -1500px
+$icons_white_time-width: 40px
+$icons_white_time-height: 40px
+$icons_white_time-total-width: 1850px
+$icons_white_time-total-height: 1850px
+$icons_white_time-image: 'sprite.png'
+$icons_white_time: 1650px 1500px -1650px -1500px 40px 40px 1850px 1850px 'sprite.png' 'icons_white_time'
+$logo-name: 'logo'
+$logo-x: 0px
+$logo-y: 0px
+$logo-offset-x: 0px
+$logo-offset-y: 0px
+$logo-width: 1600px
+$logo-height: 1600px
+$logo-total-width: 1850px
+$logo-total-height: 1850px
+$logo-image: 'sprite.png'
+$logo: 0px 0px 0px 0px 1600px 1600px 1850px 1850px 'sprite.png' 'logo'
+$metro_logo-name: 'metro_logo'
+$metro_logo-x: 1600px
+$metro_logo-y: 1500px
+$metro_logo-offset-x: -1600px
+$metro_logo-offset-y: -1500px
+$metro_logo-width: 50px
+$metro_logo-height: 50px
+$metro_logo-total-width: 1850px
+$metro_logo-total-height: 1850px
+$metro_logo-image: 'sprite.png'
+$metro_logo: 1600px 1500px -1600px -1500px 50px 50px 1850px 1850px 'sprite.png' 'metro_logo'
+$step_color_exam-name: 'step_color_exam'
+$step_color_exam-x: 1000px
+$step_color_exam-y: 1600px
+$step_color_exam-offset-x: -1000px
+$step_color_exam-offset-y: -1600px
+$step_color_exam-width: 250px
+$step_color_exam-height: 250px
+$step_color_exam-total-width: 1850px
+$step_color_exam-total-height: 1850px
+$step_color_exam-image: 'sprite.png'
+$step_color_exam: 1000px 1600px -1000px -1600px 250px 250px 1850px 1850px 'sprite.png' 'step_color_exam'
+$step_color_practice-name: 'step_color_practice'
+$step_color_practice-x: 750px
+$step_color_practice-y: 1600px
+$step_color_practice-offset-x: -750px
+$step_color_practice-offset-y: -1600px
+$step_color_practice-width: 250px
+$step_color_practice-height: 250px
+$step_color_practice-total-width: 1850px
+$step_color_practice-total-height: 1850px
+$step_color_practice-image: 'sprite.png'
+$step_color_practice: 750px 1600px -750px -1600px 250px 250px 1850px 1850px 'sprite.png' 'step_color_practice'
+$step_color_teory-name: 'step_color_teory'
+$step_color_teory-x: 1250px
+$step_color_teory-y: 1600px
+$step_color_teory-offset-x: -1250px
+$step_color_teory-offset-y: -1600px
+$step_color_teory-width: 250px
+$step_color_teory-height: 250px
+$step_color_teory-total-width: 1850px
+$step_color_teory-total-height: 1850px
+$step_color_teory-image: 'sprite.png'
+$step_color_teory: 1250px 1600px -1250px -1600px 250px 250px 1850px 1850px 'sprite.png' 'step_color_teory'
+$spritesheet-width: 1850px
+$spritesheet-height: 1850px
+$spritesheet-image: 'sprite.png'
+$spritesheet-sprites: $about_photos $about_reviews $advanages_avtodrom $advanages_graphic $advanages_money $advanages_place $advanages_teach $icons_person $icons_phone $icons_white_aducation $icons_white_car $icons_white_person-08 $icons_white_shadue $icons_white_time $logo $metro_logo $step_color_exam $step_color_practice $step_color_teory
+$spritesheet: 1850px 1850px 'sprite.png' $spritesheet-sprites
+
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+  */
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+@mixin spriter-width($sprite)
+  width: nth($sprite, 5)/2
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+@mixin spriter-height($sprite)
+  height: nth($sprite, 6)/2
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+@mixin spriter-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)/2
+  $sprite-offset-y: nth($sprite, 4)/2
+  background-position: $sprite-offset-x  $sprite-offset-y
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(../img/#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+@mixin spriter($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)
+@mixin spritesr($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include spriter($sprite)
