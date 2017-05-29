@@ -1,20 +1,63 @@
-<div class="overlay popup" id="back_call">
+<div class="overlay popup" id="check_availability">
 	<div class="popup_content">
-	<a href="#" class="popup_close"><img src="img/icons/icons_plus.png" alt=""></a>
+	<a href="#" class="popup_close">
+		<span class="icon_close first"></span>
+		<span class="icon_close last"></span>
+	</a>
+		<img src="img/photos/popup_car.png" alt="" class="car">
 		<form action="">
-			<div class="text_block">
-				<div class="section_title">Форма заказа обратного звонка</div>
-				<p class="simple_text">Укажите свой номер телефона, и наш специалист свяжется с вами в ближайшее время.</p>
+			<div class="popup_text">
+				<div class="popup_title">Впишите контактные данные</div>
 			</div>
 			<div class="field">
-				<label for="sample_name" class="">Ваше имя</label>
-				<input name="NAME" class="popup_input" id="sample_name" type="text"> 
+				<input name="NAME" class="name" id="sample_name" type="text" placeholder="Ваше имя"> 
 			</div>
 			<div class="field">
-				<label for="sample_phone" class="">Телефон</label>
-				<input name="PHONE" class="popup_input" id="sample_phone" type="text">
+				<input name="PHONE" class="phone" id="sample_phone" type="text" placeholder="Номер телефона">
 			</div>
-			<button value="Оформить заказ" type="submit" class="request_call">Заказать звонок</button>
+			<button type="submit" class="btn"><span class="btn_text" data-id="check_availability">Проверить наличие мест</span></button>
+		</form>
+	</div>
+</div>
+<div class="overlay popup" id="book_place">
+	<div class="popup_content">
+	<a href="#" class="popup_close">
+		<span class="icon_close first"></span>
+		<span class="icon_close last"></span>
+	</a>
+		<img src="img/photos/popup_car.png" alt="" class="car">
+		<form action="">
+			<div class="popup_text">
+				<div class="popup_title">Впишите контактные данные</div>
+			</div>
+			<div class="field">
+				<input name="NAME" class="name" id="sample_name" type="text" placeholder="Ваше имя"> 
+			</div>
+			<div class="field">
+				<input name="PHONE" class="phone" id="sample_phone" type="text" placeholder="Номер телефона">
+			</div>
+			<button type="submit" class="btn"><span class="btn_text" data-id="check_availability">Забронировать место</span></button>
+		</form>
+	</div>
+</div>
+<div class="overlay popup" id="request_call">
+	<div class="popup_content">
+	<a href="#" class="popup_close">
+		<span class="icon_close first"></span>
+		<span class="icon_close last"></span>
+	</a>
+		<img src="img/photos/popup_car.png" alt="" class="car">
+		<form action="">
+			<div class="popup_text">
+				<div class="popup_title">Впишите контактные данные</div>
+			</div>
+			<div class="field">
+				<input name="NAME" class="name" id="sample_name" type="text" placeholder="Ваше имя"> 
+			</div>
+			<div class="field">
+				<input name="PHONE" class="phone" id="sample_phone" type="text" placeholder="Номер телефона">
+			</div>
+			<button type="submit" class="btn"><span class="btn_text" data-id="check_availability">Заказать звонок</span></button>
 		</form>
 	</div>
 </div>

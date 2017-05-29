@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/screen.css">
 
 </head>
+<body>
 <div class="overlay_nav"></div>
 <header>
 	<div class="header_top wrap">
@@ -55,7 +56,7 @@
 		</div>
 	</div>
 </header>
-<body>
+<div class="main_contant">
 	<section class="breadcrumbs_block">
 		<div class="wrap">
 			<ul class="breadcrumbs">
@@ -88,9 +89,73 @@
 <footer>
 	<div class="wrap">
 		<div class="copyright">&copy; 2017, <a href="#">avtoschool.by</a></div>
-		<div class="skyweb">Разработка сайтов <a href="skyweb.by" class="skyweb_link" target="_blank">skyweb.by</a></div>
+		<div class="skyweb">Разработка сайтов&nbsp;<a href="skyweb.by" class="skyweb_link" target="_blank">skyweb.by</a></div>
 	</div>
 </footer>
+</div>
+<div class="overlay popup" id="check_availability">
+	<div class="popup_content">
+	<a href="#" class="popup_close">
+		<span class="icon_close first"></span>
+		<span class="icon_close last"></span>
+	</a>
+		<img src="img/photos/popup_car.png" alt="" class="car">
+		<form action="">
+			<div class="popup_text">
+				<div class="popup_title">Впишите контактные данные</div>
+			</div>
+			<div class="field">
+				<input name="NAME" class="name" id="sample_name" type="text" placeholder="Ваше имя"> 
+			</div>
+			<div class="field">
+				<input name="PHONE" class="phone" id="sample_phone" type="text" placeholder="Номер телефона">
+			</div>
+			<button type="submit" class="btn"><span class="btn_text" data-id="check_availability">Проверить наличие мест</span></button>
+		</form>
+	</div>
+</div>
+<div class="overlay popup" id="book_place">
+	<div class="popup_content">
+	<a href="#" class="popup_close">
+		<span class="icon_close first"></span>
+		<span class="icon_close last"></span>
+	</a>
+		<img src="img/photos/popup_car.png" alt="" class="car">
+		<form action="">
+			<div class="popup_text">
+				<div class="popup_title">Впишите контактные данные</div>
+			</div>
+			<div class="field">
+				<input name="NAME" class="name" id="sample_name" type="text" placeholder="Ваше имя"> 
+			</div>
+			<div class="field">
+				<input name="PHONE" class="phone" id="sample_phone" type="text" placeholder="Номер телефона">
+			</div>
+			<button type="submit" class="btn"><span class="btn_text" data-id="check_availability">Забронировать место</span></button>
+		</form>
+	</div>
+</div>
+<div class="overlay popup" id="request_call">
+	<div class="popup_content">
+	<a href="#" class="popup_close">
+		<span class="icon_close first"></span>
+		<span class="icon_close last"></span>
+	</a>
+		<img src="img/photos/popup_car.png" alt="" class="car">
+		<form action="">
+			<div class="popup_text">
+				<div class="popup_title">Впишите контактные данные</div>
+			</div>
+			<div class="field">
+				<input name="NAME" class="name" id="sample_name" type="text" placeholder="Ваше имя"> 
+			</div>
+			<div class="field">
+				<input name="PHONE" class="phone" id="sample_phone" type="text" placeholder="Номер телефона">
+			</div>
+			<button type="submit" class="btn"><span class="btn_text" data-id="check_availability">Заказать звонок</span></button>
+		</form>
+	</div>
+</div>
 <script src="js/common.js"></script>
 </body>
 </html>

@@ -2,8 +2,9 @@
 <html>
 	<title>Главная</title>
 //= includes/head.html
-//= includes/header.html
 <body>
+//= includes/header.html
+<div class="main_contant">
 	<section class="free_place_block">
 		<div class="wrap wrap_col">
 			<div class="col left_col">
@@ -25,13 +26,13 @@
 		<div class="wrap wrap_col">
 			<div class="section_title">Почему выбирают автошколу “Автоштурман”?</div>
 			<div class="col col4">
-				<div class="advantages_item">
+				<div class="advantages_item animation opacity">
 					<div class="advantages_img">
 						<img src="img/icons/advanages_graphic.png" alt="">
 					</div>
 					<div class="advantages_caption">Гибкий график  занятий</div>
 				</div>
-				<div class="advantages_item">
+				<div class="advantages_item animation opacity">
 					<div class="advantages_img">
 						<img src="img/icons/advanages_teach.png" alt="">
 					</div>
@@ -39,7 +40,7 @@
 				</div>
 			</div>
 			<div class="col col8">
-				<div class="advantages_item main">
+				<div class="advantages_item main animation opacity">
 					<div class="inner_circle">
 					<div class="inner_text">
 						<div class="advantages_img">
@@ -63,16 +64,16 @@
 					</div>
 					</div>
 				</div>
-				<a href="#" class="btn disabled"><span class="btn_text">Проверить наличие мест</span></a>
+				<a href="#" class="js-btn btn" data-id="check_availability"><span class="btn_text">Проверить наличие мест</span></a>
 			</div>
 			<div class="col col4">
-				<div class="advantages_item">
+				<div class="advantages_item animation opacity">
 					<div class="advantages_img">
 						<img src="img/icons/advanages_money.png" alt="">
 					</div>
 					<div class="advantages_caption">Удобная оплата в 5 этапов</div>
 				</div>
-				<div class="advantages_item">
+				<div class="advantages_item animation opacity">
 					<div class="advantages_img">
 						<img src="img/icons/advanages_avtodrom.png" alt="">
 					</div>
@@ -84,7 +85,7 @@
 	<section class="stages">
 		<div class="wrap">
 			<div class="section_title">Этапы обучения</div>
-			<div class="stages_item">
+			<div class="stages_item animation opacity">
 				<div class="stages_img">
 					<img src="img/icons/step_color_teory.png" alt="">
 				</div>
@@ -110,7 +111,7 @@
 					<p>Стоимость до конца месяца - <span class="strike">580 р.</span> <span class="bold">400 р</span>.</p>
 				</div>
 			</div>
-			<div class="stages_item">
+			<div class="stages_item animation opacity">
 				<div class="stages_img">
 					<img src="img/icons/step_color_practice.png" alt="">
 				</div>
@@ -141,7 +142,7 @@
 					<p class="mod">Оплата производится по  расценкам на время начала практических занятий</p>
 				</div>
 			</div>
-			<div class="stages_item">
+			<div class="stages_item animation opacity">
 				<div class="stages_img">
 					<img src="img/icons/step_color_practice.png" alt="">
 				</div>
@@ -174,13 +175,13 @@
 		<div class="wrap">
 			<div class="num">4</div>
 			<div class="title bold">Количество оставшихся мест за 400 рублей</div>
-			<a href="#" class="btn disabled">Забронировать место</a>
+			<a href="#" class="btn js-btn" data-id="book_place">Забронировать место</a>
 		</div>
 	</section>
 	<section class="stages helper">
 		<div class="wrap">
 			<div class="section_title">Все еще не определились?</div>
-			<div class="stages_item">
+			<div class="stages_item animation opacity">
 				<div class="stages_img">
 					<img src="img/icons/logo.png" alt="">
 				</div>
@@ -191,7 +192,7 @@
 					<p class="text_light">Можете считать, что Вы нашли всё это! Автошкола Минска "Автоштурман" предлагает вождения для получения водительских прав категории "B".</p>
 				</div>
 			</div>
-			<div class="stages_item">
+			<div class="stages_item animation opacity">
 				<div class="stages_img">
 					<img src="img/icons/about_photos.png" alt="">
 				</div>
@@ -207,7 +208,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="stages_item">
+			<div class="stages_item animation opacity">
 				<div class="stages_img">
 					<img src="img/icons/about_reviews.png" alt="">
 				</div>
@@ -244,10 +245,12 @@
 				<li><a href="tel:+375295787277">8 (029) 578-72-77</a>&nbsp;(MTC)</li>
 				<li><a href="tel:+375176787277">8 (017) 678-72-77</a>&nbsp;(Город)</li>
 			</ul>
-			<a href="#" class="btn disabled">Заказать звонок</a>
+			<a href="#" class="btn js-btn" data-id="request_call">Заказать звонок</a>
 		</div>
 	</section>
 //= includes/footer.html
+	</div>
+//= includes/popup.html
 //= includes/script.html
 </body>
 </html>

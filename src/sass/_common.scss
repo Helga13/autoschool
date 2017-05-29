@@ -23,6 +23,7 @@ body {
 	font-smoothing: antialiased;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
+	position: relative;
 }
 
 ul {
@@ -310,13 +311,132 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6be2c6', end
 			top: 12px;
 		}
 	}
-	
 }
+
+/* --- popup --- */
+
+.overlay.popup{
+	width: 0;
+  position: fixed;
+  top: 0;
+	bottom: 0;
+//  height: 100%;
+  background: rgba(126,31,133,.8);
+  z-index: 100;
+	&.opened{
+		width: 100%;
+	}
+}
+
+.popup_content{
+	width: 600px;
+	height: 100%;
+	background: url('../img/patterns/pattern.jpg');
+	padding: 100px 90px 40px 130px;
+	position: relative;
+	transform: translateX(-1142px);
+	transition: transform 1s ease;
+	.car{
+		position: absolute;
+		right: -542px;
+		top: 114px;
+		opacity: 1;
+		width: 590px;
+		transition: transform 1.3s ease;
+	}
+	.popup_title{
+		font-family: 'ubuntuBold', $font-stack-helvetica;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+	}
+	.btn{
+		width: 100%;
+	}
+	input.name{
+		background: url('../img/icons/icons_person.png') left 8px center no-repeat, #fff;
+		background-size: 40px;
+	}
+	input.phone{
+		background: url('../img/icons/icons_phone.png') left 8px center no-repeat, #fff;
+		background-size: 40px;
+	}
+}
+
+.overlay.popup.opened{
+	.popup_content{
+		transform: translateX(0px);
+	}
+	.car{
+		
+	}
+}
+
+.overlay.popup.opened.car_loaded{
+	.car{
+		transform: translateX(150%);
+	}
+}
+
+.popup_close{
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	&:hover .icon_close{
+		background-color: #dabd54;
+	}
+	.icon_close{
+		display: inline-block;
+    width: 28px;
+    height: 3px;
+    background-color: #6ae3c7;
+    position: absolute;
+		top: 9px;
+		left: -4px;
+		transition: background-color 0.3s ease;
+		
+	}
+	.first{
+		transform: rotate(45deg);
+	}
+	.last{
+    transform: rotate(-45deg);
+	}
+}
+
+/* --- animate --- */
+
+.animation.opacity {
+		opacity: .7!important;
+		transform: scale(0.9);
+		transition: opacity .4s ease, transform .3s ease;
+		transition-delay: .4s;
+}
+
+.animation.done {
+//		transform: none;
+		transform: scale(1);
+  	opacity: 1!important;
+}
+
 
 /* --- footer --- */
 
+.main_contant{
+	position: relative;
+  min-height: 100%;
+	padding-bottom: 80px;
+}
+
 footer{
 	background-color: #751c7c;
+	position: absolute;
+  left: 0;
+  bottom: 0;
+	right: 0;
 	.copyright,
 	.skyweb{
 		display: inline-block;
@@ -1021,7 +1141,6 @@ footer{
 		}
 	}
 	.enroll .link{
-		position: relative;
 		padding-left: 42px;
 		&:after{
 			left: 42px;

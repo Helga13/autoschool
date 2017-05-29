@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/screen.css">
 
 </head>
+<body>
 <div class="overlay_nav"></div>
 <header>
 	<div class="header_top wrap">
@@ -55,7 +56,7 @@
 		</div>
 	</div>
 </header>
-<body>
+<div class="main_contant">
 	<section class="breadcrumbs_block">
 		<div class="wrap">
 			<ul class="breadcrumbs">
@@ -74,7 +75,7 @@
 					<p>Автомобиль уже давно не роскошь, а самое обычное средство передвижения. К нашей радости, в Беларуси он становится всё более доступен, поскольку темп жизни стал необычайно высоким, а всё время ходить пешком, выполняя свои дела, не представляется возможным. Преимущества владения автомобилем очевидны не для всех, поэтоу давайте вместе их вспомним. </p>
 					<p>Итак, первое, что приходит на ум, - автомобиль позволяет вам не зависеть от расписания автобусов и маршруток. Конечно, мы можем приспособиться ко всему, однако во многих случаях приходится добираться до отдаленных мест, куда на транспорте перемещаться довольно сложно. Да и проблемы переполненного транспорта, равно как и неблагоприятных погодных условий, актуальны для пассажиров всех стран.</p>
 					<p>К слову, среди категорий людей, которым очень полезен автомобиль, есть и обычные семейные люди со средним доходом. Бывает очень важно забирать жену с работы, ребенка из школы, чтобы обеспечить безопасность домашних. Это позволяет чувствовать определенную меру свободы, которая без авто попросту невозможна.</p>
-					<p>Вот почему в Республике Беларусь и, в частности, в Минске столь востребованными являются <a href="#" class="link">курсы вождения автомобиля</a>. Мы рады предоставить вам возможность овладеть основными навыками водительского мастерства. Это позволит вам уверенно чувствовать себя на дорогах и добираться в нужное место в нужное время. В автошколе «Штурман» вы можете рассчитывать на самое качественное обучение.</p>
+					<p>Вот почему в Республике Беларусь и, в частности, в Минске столь востребованными являются <a href="#" class="link" target="_blank">курсы&nbsp;вождения&nbsp;автомобиля</a>. Мы рады предоставить вам возможность овладеть основными навыками водительского мастерства. Это позволит вам уверенно чувствовать себя на дорогах и добираться в нужное место в нужное время. В автошколе «Штурман» вы можете рассчитывать на самое качественное обучение.</p>
 					<div class="back_block">
 						<a href="#" class="link link_back" target="_blank">Вернуться к списку новостей</a>
 					</div>
@@ -84,9 +85,73 @@
 <footer>
 	<div class="wrap">
 		<div class="copyright">&copy; 2017, <a href="#">avtoschool.by</a></div>
-		<div class="skyweb">Разработка сайтов <a href="skyweb.by" class="skyweb_link" target="_blank">skyweb.by</a></div>
+		<div class="skyweb">Разработка сайтов&nbsp;<a href="skyweb.by" class="skyweb_link" target="_blank">skyweb.by</a></div>
 	</div>
 </footer>
+</div>
+<div class="overlay popup" id="check_availability">
+	<div class="popup_content">
+	<a href="#" class="popup_close">
+		<span class="icon_close first"></span>
+		<span class="icon_close last"></span>
+	</a>
+		<img src="img/photos/popup_car.png" alt="" class="car">
+		<form action="">
+			<div class="popup_text">
+				<div class="popup_title">Впишите контактные данные</div>
+			</div>
+			<div class="field">
+				<input name="NAME" class="name" id="sample_name" type="text" placeholder="Ваше имя"> 
+			</div>
+			<div class="field">
+				<input name="PHONE" class="phone" id="sample_phone" type="text" placeholder="Номер телефона">
+			</div>
+			<button type="submit" class="btn"><span class="btn_text" data-id="check_availability">Проверить наличие мест</span></button>
+		</form>
+	</div>
+</div>
+<div class="overlay popup" id="book_place">
+	<div class="popup_content">
+	<a href="#" class="popup_close">
+		<span class="icon_close first"></span>
+		<span class="icon_close last"></span>
+	</a>
+		<img src="img/photos/popup_car.png" alt="" class="car">
+		<form action="">
+			<div class="popup_text">
+				<div class="popup_title">Впишите контактные данные</div>
+			</div>
+			<div class="field">
+				<input name="NAME" class="name" id="sample_name" type="text" placeholder="Ваше имя"> 
+			</div>
+			<div class="field">
+				<input name="PHONE" class="phone" id="sample_phone" type="text" placeholder="Номер телефона">
+			</div>
+			<button type="submit" class="btn"><span class="btn_text" data-id="check_availability">Забронировать место</span></button>
+		</form>
+	</div>
+</div>
+<div class="overlay popup" id="request_call">
+	<div class="popup_content">
+	<a href="#" class="popup_close">
+		<span class="icon_close first"></span>
+		<span class="icon_close last"></span>
+	</a>
+		<img src="img/photos/popup_car.png" alt="" class="car">
+		<form action="">
+			<div class="popup_text">
+				<div class="popup_title">Впишите контактные данные</div>
+			</div>
+			<div class="field">
+				<input name="NAME" class="name" id="sample_name" type="text" placeholder="Ваше имя"> 
+			</div>
+			<div class="field">
+				<input name="PHONE" class="phone" id="sample_phone" type="text" placeholder="Номер телефона">
+			</div>
+			<button type="submit" class="btn"><span class="btn_text" data-id="check_availability">Заказать звонок</span></button>
+		</form>
+	</div>
+</div>
 <script src="js/common.js"></script>
 </body>
 </html>
