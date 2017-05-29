@@ -11,27 +11,27 @@
   $spritesheet: width height image $spritesheet-sprites
   */
 $about_photos-name: 'about_photos'
-$about_photos-x: 1000px
-$about_photos-y: 1600px
-$about_photos-offset-x: -1000px
-$about_photos-offset-y: -1600px
+$about_photos-x: 1600px
+$about_photos-y: 0px
+$about_photos-offset-x: -1600px
+$about_photos-offset-y: 0px
 $about_photos-width: 250px
 $about_photos-height: 250px
 $about_photos-total-width: 1850px
 $about_photos-total-height: 1850px
 $about_photos-image: 'sprite.png'
-$about_photos: 1000px 1600px -1000px -1600px 250px 250px 1850px 1850px 'sprite.png' 'about_photos'
+$about_photos: 1600px 0px -1600px 0px 250px 250px 1850px 1850px 'sprite.png' 'about_photos'
 $about_reviews-name: 'about_reviews'
-$about_reviews-x: 750px
+$about_reviews-x: 1000px
 $about_reviews-y: 1600px
-$about_reviews-offset-x: -750px
+$about_reviews-offset-x: -1000px
 $about_reviews-offset-y: -1600px
 $about_reviews-width: 250px
 $about_reviews-height: 250px
 $about_reviews-total-width: 1850px
 $about_reviews-total-height: 1850px
 $about_reviews-image: 'sprite.png'
-$about_reviews: 750px 1600px -750px -1600px 250px 250px 1850px 1850px 'sprite.png' 'about_reviews'
+$about_reviews: 1000px 1600px -1000px -1600px 250px 250px 1850px 1850px 'sprite.png' 'about_reviews'
 $advanages_avtodrom-name: 'advanages_avtodrom'
 $advanages_avtodrom-x: 1600px
 $advanages_avtodrom-y: 250px
@@ -121,16 +121,16 @@ $icons_person-total-height: 1850px
 $icons_person-image: 'sprite.png'
 $icons_person: 500px 1600px -500px -1600px 250px 250px 1850px 1850px 'sprite.png' 'icons_person'
 $icons_phone-name: 'icons_phone'
-$icons_phone-x: 1600px
-$icons_phone-y: 0px
-$icons_phone-offset-x: -1600px
-$icons_phone-offset-y: 0px
+$icons_phone-x: 750px
+$icons_phone-y: 1600px
+$icons_phone-offset-x: -750px
+$icons_phone-offset-y: -1600px
 $icons_phone-width: 250px
 $icons_phone-height: 250px
 $icons_phone-total-width: 1850px
 $icons_phone-total-height: 1850px
 $icons_phone-image: 'sprite.png'
-$icons_phone: 1600px 0px -1600px 0px 250px 250px 1850px 1850px 'sprite.png' 'icons_phone'
+$icons_phone: 750px 1600px -750px -1600px 250px 250px 1850px 1850px 'sprite.png' 'icons_phone'
 $icons_white_aducation-name: 'icons_white_aducation'
 $icons_white_aducation-x: 1766px
 $icons_white_aducation-y: 1550px
@@ -143,49 +143,60 @@ $icons_white_aducation-total-height: 1850px
 $icons_white_aducation-image: 'sprite.png'
 $icons_white_aducation: 1766px 1550px -1766px -1550px 40px 40px 1850px 1850px 'sprite.png' 'icons_white_aducation'
 $icons_white_car-name: 'icons_white_car'
-$icons_white_car-x: 1736px
-$icons_white_car-y: 1500px
-$icons_white_car-offset-x: -1736px
-$icons_white_car-offset-y: -1500px
+$icons_white_car-x: 1726px
+$icons_white_car-y: 1550px
+$icons_white_car-offset-x: -1726px
+$icons_white_car-offset-y: -1550px
 $icons_white_car-width: 40px
 $icons_white_car-height: 40px
 $icons_white_car-total-width: 1850px
 $icons_white_car-total-height: 1850px
 $icons_white_car-image: 'sprite.png'
-$icons_white_car: 1736px 1500px -1736px -1500px 40px 40px 1850px 1850px 'sprite.png' 'icons_white_car'
+$icons_white_car: 1726px 1550px -1726px -1550px 40px 40px 1850px 1850px 'sprite.png' 'icons_white_car'
 $icons_white_person-08-name: 'icons_white_person-08'
-$icons_white_person-08-x: 1776px
+$icons_white_person-08-x: 1736px
 $icons_white_person-08-y: 1500px
-$icons_white_person-08-offset-x: -1776px
+$icons_white_person-08-offset-x: -1736px
 $icons_white_person-08-offset-y: -1500px
 $icons_white_person-08-width: 40px
 $icons_white_person-08-height: 40px
 $icons_white_person-08-total-width: 1850px
 $icons_white_person-08-total-height: 1850px
 $icons_white_person-08-image: 'sprite.png'
-$icons_white_person-08: 1776px 1500px -1776px -1500px 40px 40px 1850px 1850px 'sprite.png' 'icons_white_person-08'
+$icons_white_person-08: 1736px 1500px -1736px -1500px 40px 40px 1850px 1850px 'sprite.png' 'icons_white_person-08'
 $icons_white_shadue-name: 'icons_white_shadue'
-$icons_white_shadue-x: 1686px
-$icons_white_shadue-y: 1550px
-$icons_white_shadue-offset-x: -1686px
-$icons_white_shadue-offset-y: -1550px
+$icons_white_shadue-x: 1776px
+$icons_white_shadue-y: 1500px
+$icons_white_shadue-offset-x: -1776px
+$icons_white_shadue-offset-y: -1500px
 $icons_white_shadue-width: 40px
 $icons_white_shadue-height: 40px
 $icons_white_shadue-total-width: 1850px
 $icons_white_shadue-total-height: 1850px
 $icons_white_shadue-image: 'sprite.png'
-$icons_white_shadue: 1686px 1550px -1686px -1550px 40px 40px 1850px 1850px 'sprite.png' 'icons_white_shadue'
+$icons_white_shadue: 1776px 1500px -1776px -1500px 40px 40px 1850px 1850px 'sprite.png' 'icons_white_shadue'
 $icons_white_time-name: 'icons_white_time'
-$icons_white_time-x: 1726px
+$icons_white_time-x: 1686px
 $icons_white_time-y: 1550px
-$icons_white_time-offset-x: -1726px
+$icons_white_time-offset-x: -1686px
 $icons_white_time-offset-y: -1550px
 $icons_white_time-width: 40px
 $icons_white_time-height: 40px
 $icons_white_time-total-width: 1850px
 $icons_white_time-total-height: 1850px
 $icons_white_time-image: 'sprite.png'
-$icons_white_time: 1726px 1550px -1726px -1550px 40px 40px 1850px 1850px 'sprite.png' 'icons_white_time'
+$icons_white_time: 1686px 1550px -1686px -1550px 40px 40px 1850px 1850px 'sprite.png' 'icons_white_time'
+$icons_write-name: 'icons_write'
+$icons_write-x: 1500px
+$icons_write-y: 1600px
+$icons_write-offset-x: -1500px
+$icons_write-offset-y: -1600px
+$icons_write-width: 146px
+$icons_write-height: 126px
+$icons_write-total-width: 1850px
+$icons_write-total-height: 1850px
+$icons_write-image: 'sprite.png'
+$icons_write: 1500px 1600px -1500px -1600px 146px 126px 1850px 1850px 'sprite.png' 'icons_write'
 $logo-name: 'logo'
 $logo-x: 0px
 $logo-y: 0px
@@ -244,7 +255,7 @@ $step_color_teory: 1250px 1600px -1250px -1600px 250px 250px 1850px 1850px 'spri
 $spritesheet-width: 1850px
 $spritesheet-height: 1850px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $about_photos $about_reviews $advanages_avtodrom $advanages_graphic $advanages_money $advanages_place $advanages_teach $arr_right $icons_home $icons_person $icons_phone $icons_white_aducation $icons_white_car $icons_white_person-08 $icons_white_shadue $icons_white_time $logo $metro_logo $step_color_exam $step_color_practice $step_color_teory
+$spritesheet-sprites: $about_photos $about_reviews $advanages_avtodrom $advanages_graphic $advanages_money $advanages_place $advanages_teach $arr_right $icons_home $icons_person $icons_phone $icons_white_aducation $icons_white_car $icons_white_person-08 $icons_white_shadue $icons_white_time $icons_write $logo $metro_logo $step_color_exam $step_color_practice $step_color_teory
 $spritesheet: 1850px 1850px 'sprite.png' $spritesheet-sprites
 
 /*

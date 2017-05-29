@@ -42,7 +42,8 @@ img{
 	width: 100%;
 }
 
-input{
+input,
+textarea{
 	height: 60px;
 	width: 100%;
 	margin: 10px 0;
@@ -691,6 +692,13 @@ footer{
 		color: #a637a4;
 		padding-top: 27px;
 	}
+	.simple_text{
+		color: #222;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 11px 0;
+		font-family: 'ubuntuLight', $font-stack-helvetica;
+	}
 	.list{
 		padding: 13px 0;
 		.list_item{
@@ -919,3 +927,113 @@ footer{
 		border-bottom: 1px dashed #6be2c6;
 	}
 }
+
+.leave_feedback{
+	@include clearfix;
+	.subtitle{
+		padding-bottom: 12px;
+	}
+	.rinput{
+		height: 30px;
+		line-height: 30px;
+		width: 380px;
+		padding: 0 20px;
+		font-size: 18px;
+		line-height: 24px;
+		text-align: left;
+	}
+	textarea{
+		height: 120px;
+		width: 100%;
+		padding: 10px 20px;
+		font-size: 18px;
+		line-height: 24px;
+		resize: none;
+		border-radius: 16px;
+	}
+	.review_btn{
+		width: 380px;
+		float: right;
+		margin-bottom: 15px;
+	}
+}
+
+#schedule{
+	width: 100%;
+}
+
+.schedule_table{
+	background-color: #fff;
+	padding-bottom: 60px;
+	.subtitle{
+		color: #a637a4;
+		padding-bottom: 24px;
+	}
+	th{
+		color: #fff;
+		font-size: 18px;
+		line-height: 24px;
+		font-family: 'ubuntuBold', $font-stack-helvetica;
+		background-color: #a22dab;
+		text-align: left;
+		padding: 18px 10px;
+	}
+	td{
+		font-size: 18px;
+		line-height: 24px;
+		font-family: 'ubuntuLight', $font-stack-helvetica;
+		color: #222;
+		border-right: 2px solid #a22dab;
+		border-bottom: 2px solid #a22dab;
+		padding: 17px 10px;
+	}
+	td:first-child{
+		border-left: 2px solid #a22dab;
+	}
+	.headline{
+		text-align: center;
+		font-family: 'ubuntuBold', $font-stack-helvetica;
+	}
+	td.num,
+	td.price{
+		width: 24.47%;
+	}
+	td.days,
+	td.time{
+		width: 25.53%;
+	}
+	.week > ul{
+		font-size: 0;
+	}
+	li{
+		font-size: 12px;
+		line-height: 22px;
+		border: 1px solid #a22dab;
+		border-radius: 50%;
+		width: 22px;
+		height: 22px;
+		text-align: center;
+		display: inline-block;
+		margin-right: 4px;
+		&.marked{
+			color: #fff;
+			background-color: #a22dab;
+		}
+	}
+	.enroll .link{
+		position: relative;
+		padding-left: 42px;
+		&:after{
+			left: 42px;
+			right: 0;
+			width: auto;
+		}
+	}
+	.enroll .icon{
+		width: 25px;
+		height: 21px;
+		position: absolute;
+		left: 0;
+	}
+}
+
