@@ -8,7 +8,13 @@
 }
 
 @media only screen and (max-width : 1279px) {
+	
+}
 
+@media only screen and (max-width : 1050px) {
+	.contacts_item{
+		padding: 20px 6% 10px 30px;
+	}
 }
 
 @media only screen and (max-width : 1023px) {
@@ -16,15 +22,283 @@
 }
 
 @media only screen and (max-width : 992px) {
-
+	
 }
 
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 900px) {
+	.free_place_block .left_col .pointer{
+		font-size: 30px;
+		padding: 0 6px 0 18px;
+	}
+	.advantages_item.main .inner_text{
+		top: 16px;
+	}
+	.advantages_item.main .advantages_caption{
+		font-size: 23px;
+    line-height: 30px;
+		padding: 18px 68px 8px;
+	}
+	.metro.marked .list{
+		padding: 6px 0 6px 18px;
+	}
+	.metro.marked .list:before{
+		top: 12px;
+	}
+	.advantages_item.main .advantages_img img{
+		width: 60px;
+	}
+	.advantages_item .metro{
+		width: 70%;
+	}
+	.btn, input, textarea{
+		font-size: 23px;
+	}
+	.stages_caption{
+		padding: 21px 20px;
+	}
+	.free_place_block .right_col .free {
+    font-size: 22px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+	}
+}
 
+@media only screen and (max-width : 768px) {
+	.header_top .metro,
+	.header_phone,
+	.main_menu__left,
+	.main_menu__right,
+	.logo{
+		display: none;
+	}
+	.header_top{
+		min-height: 50px;
+	}
+	.media_contacts{
+		float: left;
+		width: calc(50% - 70px);
+	}
+	.media_location, 
+	.media_phones{
+		display: inline-block;
+	}
+	.hamburger,
+	.media_logo{
+		display: inline-block;
+	}
+	.main_menu nav{
+		position: fixed;
+    width: 320px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #dabd54;
+    z-index: 101;
+		padding: 40px 10px 20px 20px;
+		.main_menu__left,
+		.main_menu__right{
+			display: block;
+			width: 100%;
+			float: none;
+			text-align: left;
+			li:not(.heading){
+				display: block;
+				width: 100%;
+				padding: 0 10px 0 40px;
+			}
+		}
+		.main_menu__left{
+			.heading.close{
+				display: inline-block;
+				float: right;
+			}
+			.heading{
+				display: block;
+				padding-bottom: 14px;
+    		font-size: 24px;
+			}
+		}
+	}
+	nav{
+		transform: translateX(-320px);
+		transition: transform 1s ease;
+		&.visible{
+			transform: translateX(0px);
+		}
+	}
+	.heading .popup_close:hover .icon_close{
+		background-color: #6ae3c7;
+	}
+	.free_place_block .left_col,
+	.free_place_block .right_col{
+		width: 100%;
+	}
+	.free_place_block .left_col .pointer{
+		padding: 0 18px;
+		text-align: center;
+		margin: 0 0 80px 0;
+		&:after{
+			left: calc(50% - 50px);
+			right: auto;
+			bottom: -60px;
+			border-top: 60px solid #6be2c6;
+			border-right: 50px solid transparent;
+			border-bottom: 0 solid transparent;
+			border-left: 50px solid transparent;
+		}
+	}
+	.free_place_block .right_col form{
+		width: 70%;
+		margin:  0 auto;
+	}
+	.col4,
+	.col8{
+		width: 100%;
+	}
+	.col4 .advantages_item{
+		width: 222px;
+		display: inline-block;
+		padding-bottom: 0;
+		&.f_left{
+			float: left;
+		}
+		&.f_right{
+			float: right;
+		}
+	}
+	.col8 .advantages_item{
+		width: 400px;
+		display: inline-block;
+		margin-top: -70px;
+	}
+	.stages_img{
+		width: 150px;
+	}
+	.stages_right{
+		width: calc(100% - 150px);
+    padding: 0 10px 0 0;
+	}
+	.stages_list .icon{
+		width: 54px;
+	}
+	.stages_caption{
+		line-height: 28px;
+	}
+	.stages_caption .mod{
+		padding-top: 10px;
+	}
+	.stages_img{
+		display: none;
+	}
+	.stages_right{
+		width: 100%;
+		padding-left: 10px;
+	}
+	.map,
+	.contacts_item{
+		width: 100%;
+	}
+	.map{
+		height: 260px;
+		& > ymaps{
+			height: 260px!important;
+		}
+	}
+	.contacts_item .stages_title{
+		width: 100%;
+	}
+	.contacts_item .btn{
+		min-width: 300px;
+		width: 50%;
+	}
+	.stages.helper .photos_item{
+		padding-left: 0;
+	}
+}
+
+@media only screen and (max-width : 600px) {
+	footer .copyright, footer .skyweb{
+		width: 100%;
+		text-align: center;
+		height: 40px;
+		line-height: 40px;
+	}
+	.col8 .advantages_item{
+		margin-top: -40px;
+	}
+	.overlay.popup .popup_content:not(.mod){
+		width: 100%;
+		padding: 40px 10px 10px 10px;
+	}
+	.popup_close{
+		right: 20px;
+	}
 }
 
 @media only screen and (max-width : 480px) {
-
+	.col8 .advantages_item{
+		width: 300px;
+		margin: 0;
+		margin-top: -20px;
+		border-radius: 0;
+		.advantages_img{
+			display: none;
+		}
+		.advantages_caption{
+			padding: 4px 18px 10px;
+		}
+		.metro{
+			width: 100%;
+		}
+		.inner_text{
+			top: 25px;
+		}
+	}
+	.col4 .advantages_item{
+		padding-bottom: 10px;
+	}
+	.counter .title{
+		width: 100%;
+	}
+	.counter .btn{
+		width: 100%;
+	}
+	.header_top {
+    min-height: 30px;
+	}
+	.media_logo{
+		width: 100px;
+		top: -20px;
+	}
+	.media_contacts{
+		width: calc(50% - 50px);
+	}
+	.media_location, .media_phones{
+		margin: 0 6px 0 0;
+		width: 40px;
+		padding: 10px 0;
+	}
+	.free_place_block .right_col form{
+		width: 100%;
+	}
+	.col4 .advantages_item.f_left,
+	.col4 .advantages_item.f_right{
+		float: none;
+	}
+	.free_place_block .left_col .pointer{
+		line-height: 40px;
+		padding: 20px 16px;
+		&:after{
+			bottom: -59px;
+		}
+	}
+	.contacts_item{
+		padding: 10px;
+	}
+	.stages_list .text{
+		display: inline;
+	}
 }
 
 @media only screen and (max-width : 320px) {

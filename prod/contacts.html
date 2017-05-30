@@ -19,7 +19,7 @@
 			<li><img class="icon" src="img/icons/metro_logo.png" alt=""><span class="name">Первомайская</span></li>
 			<li><img class="icon" src="img/icons/metro_logo.png" alt=""><span class="name">Академия наук</span></li>
 			<li><img class="icon" src="img/icons/metro_logo.png" alt=""><span class="name">Институт культуры</span></li>
-		</ul>
+			</ul>
 			<div class="tabs_block header_phone">
 				<div class="tabs_content active">
 					<a href="tel:+375291234567">8 (029) <span class="bold">678-72-77</span></a>
@@ -40,8 +40,29 @@
 	</div>
 	<div class="main_menu">
 		<div class="wrap">
+			<div class="media_contacts">
+				<div class="media_phones js-btn" data-id="phones_popup">
+					<img src="img/icons/advanages_graphic.png" alt="">
+				</div>
+				<div class="media_location js-btn" data-id="location_popup">
+					<img src="img/icons/advanages_place.png" alt="">
+				</div>
+			</div>
+			<div class="media_logo"><a href="/"><img src="img/logo.png" alt=""></a></div>
+			<div class="hamburger">
+				<span class="icon_btn"></span>
+				<span class="icon_btn"></span>
+				<span class="icon_btn"></span>
+			</div>
 			<nav>
 				<ul class="main_menu__left">
+					<li class="heading close">
+						<a href="#" class="popup_close">
+							<span class="icon_close first"></span>
+							<span class="icon_close last"></span>
+						</a>
+					</li>
+					<li class="heading">Меню</li>
 					<li><a class="link_m" href="#">Обучение</a></li>
 					<li><a class="link_m" href="#">Стоимость</a></li>
 					<li><a class="link_m" href="#">Оплата</a></li>
@@ -154,6 +175,39 @@
 			</div>
 			<button type="submit" class="btn"><span class="btn_text" data-id="check_availability">Заказать звонок</span></button>
 		</form>
+	</div>
+</div>
+<div class="overlay popup" id="phones_popup">
+	<div class="popup_content mod">
+	<a href="#" class="popup_close">
+		<span class="icon_close first"></span>
+		<span class="icon_close last"></span>
+	</a>
+<!--		<img src="img/photos/popup_car.png" alt="" class="car">-->
+		<ul>
+			<li class="heading">Контакты</li>
+			<li><a href="tel:+375291234567">8 (029) <span class="bold">678-72-77</span></a></li>
+			<li class="key">Velcom</li>
+			<li><a href="tel:+375291234568">8 (029) <span class="bold">678-72-78</span></a></li>
+			<li class="key">МТС</li>
+			<li><a href="tel:+375291234569">8 (029) <span class="bold">678-72-79</span></a></li>
+			<li class="key">Город</li>
+		</ul>
+	</div>
+</div>
+<div class="overlay popup" id="location_popup">
+	<div class="popup_content mod">
+	<a href="#" class="popup_close">
+		<span class="icon_close first"></span>
+		<span class="icon_close last"></span>
+	</a>
+<!--		<img src="img/photos/popup_car.png" alt="" class="car">-->
+		<ul class="media_metro">
+			<li class="heading">Расположение</li>
+			<li><img class="icon" src="img/icons/metro_logo.png" alt=""><span class="name">Первомайская</span></li>
+			<li><img class="icon" src="img/icons/metro_logo.png" alt=""><span class="name">Академия наук</span></li>
+			<li><img class="icon" src="img/icons/metro_logo.png" alt=""><span class="name">Институт культуры</span></li>
+		</ul>
 	</div>
 </div>
 <script src="js/common.js"></script>

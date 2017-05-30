@@ -236,12 +236,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6be2c6', end
 	}
 }
 
-.logo{
+.logo,
+.media_logo{
 	width: 140px;
 	overflow: hidden;
 	position: relative;
 	top: -40px;
 	z-index: 1;
+}
+
+.media_logo{
+	display: none;
 }
 
 .main_menu{
@@ -269,11 +274,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6be2c6', end
 	}
 	.main_menu__left{
 		float: left;
+		.heading{
+			display: none;
+		}
 	}
 	.main_menu__right{
 		float: right;
 		text-align: right;
 	}
+}
+
+.overlay_nav.visible {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+	left: 0;
+	right: 0;
+  background: rgba(126,31,133,.8);
+  z-index: 100;
 }
 
 /* --- breadcrumbs --- */
@@ -336,6 +354,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6be2c6', end
 	position: relative;
 	transform: translateX(-1142px);
 	transition: transform 1s ease;
+	&.mod{
+		background: #dabd54;
+		padding-left: 20px;
+		padding-right: 10px;
+		width: 320px;
+		transform: translateX(-320px);
+		li:not(.heading){
+			padding-left: 40px;
+			line-height: 22px;
+		}
+		.heading{
+			padding-bottom: 14px;
+			font-size: 24px;
+		}
+		.key{
+			color: #222;
+			padding-bottom: 8px;
+		}
+		.popup_close:hover .icon_close{
+			background-color: #6ae3c7;
+		}
+		.media_metro .icon{
+			width: 14px;
+			margin-right: 8px;
+		}
+	}
 	.car{
 		position: absolute;
 		right: -542px;
@@ -366,9 +410,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6be2c6', end
 .overlay.popup.opened{
 	.popup_content{
 		transform: translateX(0px);
-	}
-	.car{
-		
 	}
 }
 
@@ -422,6 +463,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6be2c6', end
   	opacity: 1!important;
 }
 
+/* --- media --- */
+
+.media_phones,
+.media_location{
+	width: 60px;
+	height: 60px;
+//	display: inline-block;
+	padding: 10px;
+	margin: 0 0 0 10px;
+	cursor: pointer;
+	display: none;
+}
+
+.hamburger{
+	width: 66px;
+  height: 60px;
+  line-height: 0;
+  padding: 20px;
+	float: right;
+	cursor: pointer;
+	display: none;
+	.icon_btn{
+		display: inline-block;
+    width: 26px;
+    height: 3px;
+    margin: 2px 0;
+    background-color: #fff;
+	}
+}
 
 /* --- footer --- */
 
@@ -515,6 +585,9 @@ footer{
 	.right_col{
 		text-align: center;
 		width: 41.667%;
+		.free{
+			font-size: 20px;
+		}
 		.btn{
 			width: 100%;
 		}
@@ -776,7 +849,7 @@ footer{
 .contacts_item{
 	width: 50%;
 	display: inline-block;
-	padding: 40px 15.21% 50px 90px;
+	padding: 40px 15.21% 10px 90px;
 	vertical-align: top;
 	.title{
 		padding: 10px;
