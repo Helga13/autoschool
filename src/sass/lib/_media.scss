@@ -67,8 +67,7 @@
 @media only screen and (max-width : 768px) {
 	.header_top .metro,
 	.header_phone,
-	.main_menu__left,
-	.main_menu__right,
+	.nav,
 	.logo{
 		display: none;
 	}
@@ -95,6 +94,7 @@
     bottom: 0;
     background-color: #dabd54;
     z-index: 101;
+		overflow: hidden;
 		padding: 40px 10px 20px 20px;
 		.main_menu__left,
 		.main_menu__right{
@@ -125,6 +125,7 @@
 		transition: transform 1s ease;
 		&.visible{
 			transform: translateX(0px);
+//			transition: transform 1s ease;
 		}
 	}
 	.heading .popup_close:hover .icon_close{
@@ -298,6 +299,37 @@
 	}
 	.stages_list .text{
 		display: inline;
+	}
+	.item_block .list .list_item.num,
+	.item_block .list .list_item{
+		padding: 4px 0 4px 30px;
+	}
+	.leave_feedback .rinput,
+	.leave_feedback .review_btn{
+		width: 100%;
+	}
+	.schedule_table > .wrap {
+    padding-left: 0;
+    padding-right: 0;
+		.subtitle{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	.schedule_table th,
+	.schedule_table td{
+		padding: 12px 4px;
+		font-size: 12px;
+//		font-family: 'ubuntuLight', $font-stack-helvetica;
+	}
+	.schedule_table .enroll .link{
+		padding-left: 0;
+		&:after{
+			left: 0;
+		}
+		img{
+			display: none;
+		}
 	}
 }
 
