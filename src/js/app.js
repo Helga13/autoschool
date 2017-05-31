@@ -93,8 +93,5 @@ $(document).ready(function () {
 		$(sidebar).removeClass('visible');
 	});
 	
-	if($(window).innerWidth() <= 768) {
-    $('nav').addClass('media');
-	}
 	
 })
