@@ -10,17 +10,6 @@
   At the bottom of this section, we provide information about the spritesheet itself
   $spritesheet: width height image $spritesheet-sprites
   */
-$Icon-phone-name: 'Icon-phone'
-$Icon-phone-x: 1750px
-$Icon-phone-y: 1500px
-$Icon-phone-offset-x: -1750px
-$Icon-phone-offset-y: -1500px
-$Icon-phone-width: 64px
-$Icon-phone-height: 64px
-$Icon-phone-total-width: 1850px
-$Icon-phone-total-height: 1850px
-$Icon-phone-image: 'sprite.png'
-$Icon-phone: 1750px 1500px -1750px -1500px 64px 64px 1850px 1850px 'sprite.png' 'Icon-phone'
 $about_photos-name: 'about_photos'
 $about_photos-x: 500px
 $about_photos-y: 1600px
@@ -109,6 +98,17 @@ $arr_right-total-width: 1850px
 $arr_right-total-height: 1850px
 $arr_right-image: 'sprite.png'
 $arr_right: 1814px 1500px -1814px -1500px 10px 6px 1850px 1850px 'sprite.png' 'arr_right'
+$icon-phone-name: 'icon-phone'
+$icon-phone-x: 1750px
+$icon-phone-y: 1500px
+$icon-phone-offset-x: -1750px
+$icon-phone-offset-y: -1500px
+$icon-phone-width: 64px
+$icon-phone-height: 64px
+$icon-phone-total-width: 1850px
+$icon-phone-total-height: 1850px
+$icon-phone-image: 'sprite.png'
+$icon-phone: 1750px 1500px -1750px -1500px 64px 64px 1850px 1850px 'sprite.png' 'icon-phone'
 $icon-placeholder-name: 'icon-placeholder'
 $icon-placeholder-x: 1686px
 $icon-placeholder-y: 1500px
@@ -277,7 +277,7 @@ $step_color_teory: 1250px 1600px -1250px -1600px 250px 250px 1850px 1850px 'spri
 $spritesheet-width: 1850px
 $spritesheet-height: 1850px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $Icon-phone $about_photos $about_reviews $advanages_avtodrom $advanages_graphic $advanages_money $advanages_place $advanages_teach $arr_right $icon-placeholder $icons_home $icons_person $icons_phone $icons_white_aducation $icons_white_car $icons_white_person-08 $icons_white_shadue $icons_white_time $icons_write $logo $metro_logo $step_color_exam $step_color_practice $step_color_teory
+$spritesheet-sprites: $about_photos $about_reviews $advanages_avtodrom $advanages_graphic $advanages_money $advanages_place $advanages_teach $arr_right $icon-phone $icon-placeholder $icons_home $icons_person $icons_phone $icons_white_aducation $icons_white_car $icons_white_person-08 $icons_white_shadue $icons_white_time $icons_write $logo $metro_logo $step_color_exam $step_color_practice $step_color_teory
 $spritesheet: 1850px 1850px 'sprite.png' $spritesheet-sprites
 
 /*
