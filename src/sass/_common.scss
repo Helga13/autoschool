@@ -302,6 +302,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6be2c6', end
 		box-shadow: 2px 2px 3px 0px rgba(212,212,212,1);
 		cursor: pointer;
 		opacity: 0;
+		visibility: hidden;
 		transition: opacity 0.3s ease;
 		li{
 			font-size: 14px;
@@ -337,6 +338,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6be2c6', end
 	}
 	li:hover{
 		.sub-menu{
+			visibility: visible;
 			opacity: 1;
 		}
 	}
@@ -473,7 +475,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6be2c6', end
 
 .overlay.popup.opened.car_loaded{
 	.car{
-		transform: translateX(150%);
+		transform: translateX(200%);
 	}
 }
 
@@ -555,7 +557,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6be2c6', end
 
 .main_contant{
 	position: relative;
-  min-height: 100%;
+  min-height: calc(100% - 130px);
 	padding-bottom: 80px;
 }
 
@@ -1273,6 +1275,8 @@ footer{
 	}
 	.enroll .link{
 		padding-left: 42px;
+		background: url('../img/icons/icons_write.png') left center no-repeat;
+		background-size: 25px 21px;
 		&:after{
 			left: 42px;
 			right: 0;
